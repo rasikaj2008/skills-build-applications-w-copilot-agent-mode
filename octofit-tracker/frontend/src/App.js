@@ -9,12 +9,16 @@ import Workouts from './components/Workouts';
 import './App.css';
 
 
+
 function App() {
   return (
     <Router>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
         <div className="container-fluid">
-          <NavLink className="navbar-brand fw-bold" to="/">Octofit Tracker</NavLink>
+          <NavLink className="navbar-brand fw-bold d-flex align-items-center" to="/">
+            <img src={process.env.PUBLIC_URL + '/octofitapp-small.png'} alt="Octofit Logo" className="octofit-logo me-2" />
+            Octofit Tracker
+          </NavLink>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
